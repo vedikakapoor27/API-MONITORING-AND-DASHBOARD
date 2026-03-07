@@ -1,0 +1,191 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 1em;
+  margin-top: 0.5rem;    /* Example: Reduced from 1rem */
+  margin-bottom: 0.5rem;
+}
+
+.card-header { /* Or the specific class name of your CardHeader */
+  padding-top: 0.75rem; /* Adjust as needed */
+  padding-bottom: 0.75rem; /* Adjust as needed */
+}
+
+.card-title { /* Or the specific class name of your CardTitle */
+  margin-bottom: 0.5rem; /* Adjust as needed */
+}
+.read-the-docs {
+  color: #888;
+}
+
+/* Custom animations */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+.animate-pulse-gentle {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 5s infinite ease-in-out;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 10s ease infinite;
+}
+
+/* Glass effect enhancements */
+.glass-card {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+}
+
+.dark .glass-card {
+  background: rgba(30, 30, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Card hover effects */
+.hover-scale {
+  transition: all 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.dark .hover-scale:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Rainbow gradient text */
+.rainbow-text {
+  background: linear-gradient(to right, #ff5f6d, #ffc371, #36d1dc, #5b86e5, #ee9ca7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 500% auto;
+  animation: rainbow 15s linear infinite;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Colorful status indicators */
+.status-indicator {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.status-healthy {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  animation: pulse 2s infinite;
+}
+
+.status-warning {
+  background: linear-gradient(to right, #f7971e, #ffd200);
+  animation: pulse 2s infinite;
+}
+
+.status-error {
+  background: linear-gradient(to right, #ff5f6d, #ff9966);
+  animation: pulse 2s infinite;
+}
+
+.card-gradient-blue {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.card-gradient-purple {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.card-gradient-amber {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(245, 158, 11, 0.1) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.card-gradient-green {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.dark .card-gradient-blue {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.dark .card-gradient-purple {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.dark .card-gradient-amber {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(245, 158, 11, 0.15) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.dark .card-gradient-green {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
