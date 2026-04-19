@@ -24,6 +24,16 @@ import uuid
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
+def _timestamp_to_iso(value):
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return None
+    if isinstance(value, str):
+        return value
+    if hasattr(value, "isoformat"):
+        return value.isoformat()
+    return pd.Timestamp(value).isoformat()
+
 # Load environment variables
 load_dotenv()
 

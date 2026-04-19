@@ -5,6 +5,8 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    /* Only load Vite's client types globally; avoids TS scanning every @types/* (e.g. geojson, resize-observer from Recharts/D3) and surfacing false "cannot find" errors. */
+    "types": ["vite/client"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
